@@ -52,6 +52,38 @@ public class FirstAutomatedTest {
         assertEquals(typeUserNameValue, "");
     }
 
+    @Test
+    public void checkRadioButtonTest() {
+        WebElement maleRadioButton = driver.findElement(By.cssSelector("input[value='male']"));
+        WebElement femaleRadioButton = driver.findElement(By.cssSelector("input[value='female']"));
+
+        sleep();
+        maleRadioButton.click();
+        sleep();
+        femaleRadioButton.click();
+        sleep();
+        assertTrue(femaleRadioButton.isSelected());
+
+    }
+
+    @Test
+    public void checkboxButtonTest() {
+        WebElement pizzaCheckbox = driver.findElement(By.cssSelector("input[value='pizza']"));
+        WebElement spaghettiCheckbox = driver.findElement(By.cssSelector("input[value='spaghetti']"));
+        WebElement hamburgerCheckbox = driver.findElement(By.cssSelector("input[value='hamburger']"));
+
+        sleep();
+        pizzaCheckbox.click();
+        sleep();
+        spaghettiCheckbox.click();
+        sleep();
+        hamburgerCheckbox.click();
+        sleep();
+        assertTrue(pizzaCheckbox.isSelected()
+                && spaghettiCheckbox.isSelected()
+                && hamburgerCheckbox.isSelected());
+    }
+
 
     private void sleep() {
         try {
