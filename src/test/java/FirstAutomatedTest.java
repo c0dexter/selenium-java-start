@@ -2,9 +2,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -91,6 +95,32 @@ public class FirstAutomatedTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void dropDownListingTest(){
+        WebElement countryWebElement = driver.findElement(By.id("country"));
+        Select countryDropDown = new Select(countryWebElement);
+
+        // Load to the list all options from list
+        List<WebElement> optionsList = countryDropDown.getOptions();
+
+        // Get list of options (names)
+        List<String> namesOfOptions = new ArrayList<String>();
+        for(WebElement option: optionsList){
+            namesOfOptions.add(option.getText());
+            System.out.println(option.getText());
+        }
+
+        // Make assertions -> create list with expected values, compare it with real list
+        List<String> expectedNamesOfOptions = new ArrayList<String>();
+        expectedNamesOfOptions.add("Germany");
+        expectedNamesOfOptions.add("Poland");
+        expectedNamesOfOptions.add("UK");
+
+        sleep();
+
+        assertEquals(namesOfOptions, expectedNamesOfOptions);
     }
 
     @AfterMethod
