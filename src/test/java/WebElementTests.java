@@ -36,9 +36,24 @@ public class WebElementTests {
 
     }
 
+    @Test
+    public void typingAndClearingValueInsideWebElementTest() {
+        WebElement userNameField = driver.findElement(By.id("username"));
+        userNameField.sendKeys("Selenium Start");
+
+        sleep();
+        userNameField.clear();
+
+        String typeUserNameValue = userNameField.getAttribute("value");
+        sleep();
+
+        assertEquals(typeUserNameValue, "");
+    }
+
+
     private void sleep() {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

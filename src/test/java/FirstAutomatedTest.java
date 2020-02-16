@@ -33,6 +33,8 @@ public class FirstAutomatedTest {
         assertTrue(pageTitle.contains("JavaStart"));
     }
 
+
+
     @AfterMethod
     public void afterTest() {
         driver.close();
