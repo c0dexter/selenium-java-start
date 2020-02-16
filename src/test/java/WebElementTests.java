@@ -12,20 +12,28 @@ public class WebElementTests {
     private WebDriver driver;
 
     @BeforeMethod
-    public void beforeTest(){
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+    public void beforeTest() {
+        System.setProperty("webdriver.chrome.driver", "drivers/repository/chrome_v80/chromedriver");
         driver = new ChromeDriver();
         driver.navigate().to("http://przyklady.javastart.pl/test/full_form.html");
     }
 
     @Test
-    public void typingIntoWebElementTest(){
+    public void typingIntoWebElementTest() {
         WebElement userNameField = driver.findElement(By.id("username"));
         userNameField.sendKeys("Selenium Start");
 
         String typeUserNameValue = userNameField.getAttribute("value");
         sleep();
         assertEquals(typeUserNameValue, "Selenium Start");
+    }
+
+    @Test
+    public void filePickingTest() {
+        WebElement uploadFilePicker = driver.findElement(By.id("upload_file"));
+        uploadFilePicker.sendKeys("/home/c0dexter/IdeaProjects/Selenium/FirstProject/test_files/some_text");
+        sleep();
+
     }
 
     private void sleep() {
@@ -37,7 +45,7 @@ public class WebElementTests {
     }
 
     @AfterMethod
-    public void afterTest(){
+    public void afterTest() {
         driver.close();
         driver.quit();
     }
