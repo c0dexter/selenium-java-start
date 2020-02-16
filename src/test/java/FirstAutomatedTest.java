@@ -123,6 +123,27 @@ public class FirstAutomatedTest {
         assertEquals(namesOfOptions, expectedNamesOfOptions);
     }
 
+    @Test
+    public void selectingOptionsFromDropDownTest(){
+        WebElement countryWebElement = driver.findElement(By.id("country"));
+        Select countryDropDown = new Select(countryWebElement);
+
+        sleep();
+
+        // Select by index
+        countryDropDown.selectByIndex(1);
+        sleep();
+        assertEquals(countryDropDown.getFirstSelectedOption().getText(), "Poland");
+
+        // Select by value
+        countryDropDown.selectByValue("de_DE");
+        sleep();
+        assertEquals(countryDropDown.getFirstSelectedOption().getText(), "Germany");
+
+        countryDropDown.selectByVisibleText("UK");
+        assertEquals(countryDropDown.getFirstSelectedOption().getText(), "UK");
+    }
+
     @AfterMethod
     public void afterTest() {
         driver.close();
