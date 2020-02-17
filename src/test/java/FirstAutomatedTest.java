@@ -144,6 +144,22 @@ public class FirstAutomatedTest {
         assertEquals(countryDropDown.getFirstSelectedOption().getText(), "UK");
     }
 
+    @Test
+    public void checkIfElementsOnPageTest(){
+        WebElement userNameField = driver.findElement(By.id("username"));
+        WebElement passwordField = driver.findElement(By.id("password"));
+        WebElement emailLabel = driver.findElement(By.cssSelector("span[class='help-block']"));
+
+        System.out.println("Is usernameField displayed: " + userNameField.isDisplayed());
+        System.out.println("Is usernameField enabled: " + userNameField.isEnabled());
+
+        System.out.println("Is passwordField displayed: " + passwordField.isDisplayed());
+        System.out.println("Is passwordField enabled: " + passwordField.isEnabled());
+
+        System.out.println("Is emailLabel displayed: " + emailLabel.isDisplayed());
+        System.out.println("Is emailLabel enabled: " + emailLabel.isEnabled());
+    }
+
     @AfterMethod
     public void afterTest() {
         driver.close();
