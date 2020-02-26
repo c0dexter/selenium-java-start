@@ -31,10 +31,34 @@ public class ExplicitWaitTests {
         removeButton.click();
 
         WebDriverWait webDriverWait = new WebDriverWait(driver, 5);
-        //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
+//        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
         webDriverWait.until(ExpectedConditions.invisibilityOf(checkbox));
         WebElement messageLabel = driver.findElement(By.id("message"));
         assertEquals(messageLabel.getText(), "It's gone!");
+    }
+
+    @Test
+    public void waitForPresenceOfTheElement() {
+        WebElement checkbox = driver.findElement(By.id("checkbox"));
+
+        assertTrue(checkbox.isDisplayed());
+        assertFalse(checkbox.isSelected());
+
+        WebElement removeOrAddButton = driver.findElement(By.cssSelector("button[id='btn']"));
+        removeOrAddButton.click();
+
+        WaitUntil waitUntil = new WaitUntil(driver);
+        waitUntil.waitUntilElementIsInvisible(checkbox);
+
+        WebElement messageLabel = driver.findElement(By.id("message"));
+        assertEquals(messageLabel.getText(), "It's gone!");
+
+        removeOrAddButton.click();
+
+        checkbox = waitUntil.waitUntilPresenceOfElementLocated(By.id("checkbox"));
+
+        assertTrue(checkbox.isDisplayed());
+        assertFalse(checkbox.isSelected());
     }
 
 
