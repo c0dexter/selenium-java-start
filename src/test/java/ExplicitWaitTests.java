@@ -31,7 +31,6 @@ public class ExplicitWaitTests {
         removeButton.click();
 
         WebDriverWait webDriverWait = new WebDriverWait(driver, 5);
-//        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
         webDriverWait.until(ExpectedConditions.invisibilityOf(checkbox));
         WebElement messageLabel = driver.findElement(By.id("message"));
         assertEquals(messageLabel.getText(), "It's gone!");
