@@ -25,10 +25,12 @@ public class LoginPage {
     }
 
     public void typeIntoUserNameField(String username) {
+        usernameField.clear();
         usernameField.sendKeys(username);
     }
 
     public void typeIntoPasswordField(String password) {
+        passwordField.clear();
         passwordField.sendKeys(password);
     }
 
