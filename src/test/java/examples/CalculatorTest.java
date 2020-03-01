@@ -1,3 +1,6 @@
+package examples;
+
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -30,7 +33,7 @@ public class CalculatorTest {
 
     @Test
     public void case3() {
-        assertEquals(calculator.add(FIRST_NUMBER, SECOND_NUMBER), EXPECTED_SUM_RESULT);
+        Assert.assertEquals(calculator.add(FIRST_NUMBER, SECOND_NUMBER), EXPECTED_SUM_RESULT);
     }
 }
 
