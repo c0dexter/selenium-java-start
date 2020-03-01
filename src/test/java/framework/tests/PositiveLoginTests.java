@@ -1,5 +1,6 @@
 package framework.tests;
 
+import framework.page.objects.FooterPage;
 import framework.page.objects.LandingPage;
 import framework.page.objects.LoginPage;
 import framework.page.objects.TopMenuPage;
@@ -11,9 +12,9 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
-public class FailedLoginTests {
+public class PositiveLoginTests {
     private WebDriver driver;
 
     @BeforeMethod
@@ -32,7 +33,7 @@ public class FailedLoginTests {
     }
 
     @Test
-    public void asUserTryToLogInWithIncorrectLoginAndPassword() {
+    public void asUserTryToLogInWithCorrectLoginAndPassword() throws InterruptedException {
         LandingPage landingPage = new LandingPage(driver);
         landingPage.clickOnEnterStoreLink();
 
@@ -40,11 +41,12 @@ public class FailedLoginTests {
         topMenuPage.clickOnSignOnLink();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.typeIntoUserNameField("NotExistingLogin");
-        loginPage.typeIntoPasswordField("NotProperPassword");
+        loginPage.typeIntoUserNameField("j2ee");
+        loginPage.typeIntoPasswordField("j2ee");
         loginPage.clickOnLoginButton();
 
-        assertEquals(loginPage.getWarningMessage(), "Invalid username or password. Signon failed.");
+        FooterPage footerPage = new FooterPage(driver);
+        assertTrue(footerPage.isBannerAfterLoginDisplayed());
     }
 
     @AfterMethod
