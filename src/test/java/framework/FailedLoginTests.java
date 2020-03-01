@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
 public class FailedLoginTests {
     private WebDriver driver;
@@ -42,6 +43,23 @@ public class FailedLoginTests {
         loginPage.clickOnLoginButton();
 
         assertEquals(loginPage.getWarningMessage(), "Invalid username or password. Signon failed.");
+    }
+
+    @Test
+    public void asUserTryToLogInWithCorrectLoginAndPassword() throws InterruptedException {
+        LandingPage landingPage = new LandingPage(driver);
+        landingPage.clickOnEnterStoreLink();
+
+        TopMenuPage topMenuPage = new TopMenuPage(driver);
+        topMenuPage.clickOnSignOnLink();
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.typeIntoUserNameField("j2ee");
+        loginPage.typeIntoPasswordField("j2ee");
+        loginPage.clickOnLoginButton();
+
+        FooterPage footerPage = new FooterPage(driver);
+        assertTrue(footerPage.isBannerAfterLoginDisplayed());
     }
 
     @AfterMethod
