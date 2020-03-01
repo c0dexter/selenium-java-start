@@ -100,7 +100,7 @@ public class FirstAutomatedTest {
     }
 
     @Test
-    public void dropDownListingTest(){
+    public void dropDownListingTest() {
         WebElement countryWebElement = driver.findElement(By.id("country"));
         Select countryDropDown = new Select(countryWebElement);
 
@@ -109,7 +109,7 @@ public class FirstAutomatedTest {
 
         // Get list of options (names)
         List<String> namesOfOptions = new ArrayList<String>();
-        for(WebElement option: optionsList){
+        for (WebElement option : optionsList) {
             namesOfOptions.add(option.getText());
             System.out.println(option.getText());
         }
@@ -126,7 +126,7 @@ public class FirstAutomatedTest {
     }
 
     @Test
-    public void selectingOptionsFromDropDownTest(){
+    public void selectingOptionsFromDropDownTest() {
         WebElement countryWebElement = driver.findElement(By.id("country"));
         Select countryDropDown = new Select(countryWebElement);
 
@@ -147,7 +147,7 @@ public class FirstAutomatedTest {
     }
 
     @Test
-    public void checkIfElementsOnPageTest(){
+    public void checkIfElementsOnPageTest() {
         WebElement userNameField = driver.findElement(By.id("username"));
         WebElement passwordField = driver.findElement(By.id("password"));
         WebElement emailLabel = driver.findElement(By.cssSelector("span[class='help-block']"));

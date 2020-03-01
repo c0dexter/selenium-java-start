@@ -15,14 +15,14 @@ public class FileUploadTests {
     private WebDriver driver;
 
     @BeforeMethod
-    public void beforeTest(){
+    public void beforeTest() {
         System.setProperty("webdriver.chrome.driver", "drivers/repository/chrome_v80/chromedriver");
         driver = new ChromeDriver();
         driver.navigate().to("http://theinternet.przyklady.javastart.pl/upload");
     }
 
     @Test
-    public void fileUploadTest(){
+    public void fileUploadTest() {
         WebElement chooseFileButton = driver.findElement(By.id("file-upload"));
         WebElement submitButton = driver.findElement(By.id("file-submit"));
 
@@ -34,7 +34,7 @@ public class FileUploadTests {
         assertEquals(uploadedFiles.getText(), "some_text");
     }
 
-    private void sleep(){
+    private void sleep() {
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -43,7 +43,7 @@ public class FileUploadTests {
     }
 
     @AfterMethod
-    public void afterTest(){
+    public void afterTest() {
         driver.close();
         driver.quit();
     }

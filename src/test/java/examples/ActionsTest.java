@@ -21,7 +21,7 @@ public class ActionsTest {
     }
 
     @Test
-    public void makeImagesBiggerByMovingScrollOnElement(){
+    public void makeImagesBiggerByMovingScrollOnElement() {
         WebElement smileyIcon1 = driver.findElement(By.id("smiley"));
         WebElement smileyIcon2 = driver.findElement(By.id("smiley2"));
 

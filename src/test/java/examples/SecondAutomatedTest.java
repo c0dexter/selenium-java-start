@@ -19,7 +19,7 @@ public class SecondAutomatedTest {
     }
 
     @Test
-    public void mySecondTest(){
+    public void mySecondTest() {
         driver.navigate().to("http://www.seleniumhq.org/");
 
         String pageTitle = driver.getTitle();

@@ -27,7 +27,7 @@ public class FluentWaitTests2 {
     }
 
     @Test
-    public void fluentWaitWithExceptionTest(){
+    public void fluentWaitWithExceptionTest() {
         WebElement startButton = driver.findElement(By.cssSelector("#start > button"));
         startButton.click();
 
@@ -40,7 +40,7 @@ public class FluentWaitTests2 {
 
         WebElement helloWorldMessage = driver.findElement(By.cssSelector("#finish h4"));
         assertTrue(helloWorldMessage.isDisplayed());
-   }
+    }
 
     @AfterClass
     public void afterClass() {
