@@ -1,5 +1,9 @@
-package framework;
+package framework.tests;
 
+import framework.page.objects.FooterPage;
+import framework.page.objects.LandingPage;
+import framework.page.objects.LoginPage;
+import framework.page.objects.TopMenuPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;

@@ -1,23 +1,24 @@
-package framework;
+package framework.page.objects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TopMenuPage {
+// Page Object of first page
+public class LandingPage {
     WebDriver driver;
 
     // PageFactory
-    @FindBy(css = "#MenuContent a[href*='signonForm']")
-    WebElement signOnLink;
+    @FindBy(css = "#Content a")
+    WebElement enterStoreLink;
 
-    public TopMenuPage(WebDriver driver) {
+    public LandingPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this); // Initializing elements in the constructor
     }
 
-    public void clickOnSignOnLink() {
-        signOnLink.click();
+    public void clickOnEnterStoreLink() {
+        enterStoreLink.click();
     }
 }
