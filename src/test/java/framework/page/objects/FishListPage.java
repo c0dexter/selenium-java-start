@@ -1,13 +1,11 @@
 package framework.page.objects;
 
-import org.openqa.selenium.WebDriver;
+import framework.tests.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class FishListPage {
-    WebDriver driver;
-
     //Page Object
     @FindBy(css = "a[href$='FI-SW-01']")
     WebElement angelfishProductId;
@@ -18,9 +16,8 @@ public class FishListPage {
     @FindBy(css = "a[href$='FI-FW-02']")
     WebElement goldfishProductId;
 
-    public FishListPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    public FishListPage() {
+        PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
     public void clickOnAngelFishProductId() {

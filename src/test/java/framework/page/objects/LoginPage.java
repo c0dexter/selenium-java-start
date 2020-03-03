@@ -1,12 +1,11 @@
 package framework.page.objects;
 
-import org.openqa.selenium.WebDriver;
+import framework.tests.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    WebDriver driver;
 
     // Page Factory
     @FindBy(name = "username")
@@ -29,9 +28,8 @@ public class LoginPage {
     WebElement birdsButton;
 
 
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this); // Initializing elements in the constructor
+    public LoginPage() {
+        PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
     public void typeIntoUserNameField(String username) {

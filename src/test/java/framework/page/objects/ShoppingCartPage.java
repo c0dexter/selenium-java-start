@@ -1,22 +1,20 @@
 package framework.page.objects;
 
-import org.openqa.selenium.WebDriver;
+import framework.tests.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ShoppingCartPage {
-    WebDriver driver;
 
     @FindBy(css = "a[href$='newOrderForm=']")
     WebElement proceedToCheckoutButton;
 
-    public ShoppingCartPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    public ShoppingCartPage() {
+        PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
-    public void clickProceedToCheckoutButton(){
+    public void clickProceedToCheckoutButton() {
         proceedToCheckoutButton.click();
     }
 }
