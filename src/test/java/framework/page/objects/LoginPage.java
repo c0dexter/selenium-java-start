@@ -17,6 +17,16 @@ public class LoginPage {
     WebElement signOnButton;
     @FindBy(css = "#Content ul[class='messages'] li")
     WebElement messageLabel;
+    @FindBy(css = "#SidebarContent a[href*='Id=FISH']")
+    WebElement fishButton;
+    @FindBy(css = "#SidebarContent a[href*='Id=DOGS']")
+    WebElement dogsButton;
+    @FindBy(css = "#SidebarContent a[href*='Id=CATS']]")
+    WebElement catsButton;
+    @FindBy(css = "#SidebarContent a[href*='Id=REPTILES']")
+    WebElement reptilesButton;
+    @FindBy(css = "#SidebarContent a[href*='Id=BIRDS']")
+    WebElement birdsButton;
 
 
     public LoginPage(WebDriver driver) {
@@ -40,6 +50,26 @@ public class LoginPage {
 
     public String getWarningMessage() {
         return messageLabel.getText();
+    }
+
+    public void clickOnFish() {
+        fishButton.click();
+    }
+
+    public void clickOnDogs() {
+        dogsButton.click();
+    }
+
+    public void clickOnCats() {
+        catsButton.click();
+    }
+
+    public void clickOnReptiles() {
+        reptilesButton.click();
+    }
+
+    public void clickOnBirds() {
+        birdsButton.click();
     }
 
 }
