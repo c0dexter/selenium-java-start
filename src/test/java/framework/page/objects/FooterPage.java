@@ -1,6 +1,7 @@
 package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
+import framework.waits.WaitForElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,6 +16,7 @@ public class FooterPage {
     }
 
     public Boolean isBannerAfterLoginDisplayed() {
+        WaitForElement.waitUntilElementIsVisible(banner);
         return banner.isDisplayed();
     }
 }

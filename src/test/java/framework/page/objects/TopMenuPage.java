@@ -1,6 +1,7 @@
 package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
+import framework.waits.WaitForElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,6 +17,7 @@ public class TopMenuPage {
     }
 
     public void clickOnSignOnLink() {
+        WaitForElement.waitUntilElementIsClickable(signOnLink);
         signOnLink.click();
     }
 }
