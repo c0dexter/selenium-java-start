@@ -1,6 +1,7 @@
 package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
+import framework.waits.WaitForElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,6 +34,7 @@ public class LoginPage {
     }
 
     public void typeIntoUserNameField(String username) {
+        WaitForElement.waitUntilElementIsVisible(usernameField);
         usernameField.clear();
         usernameField.sendKeys(username);
     }
@@ -47,6 +49,7 @@ public class LoginPage {
     }
 
     public String getWarningMessage() {
+        WaitForElement.waitUntilElementIsVisible(messageLabel);
         return messageLabel.getText();
     }
 
