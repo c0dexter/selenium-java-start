@@ -1,6 +1,6 @@
 package framework.page.objects;
 
-import framework.driver.manager.DriverManager;
+import framework.driver.DriverManager;
 import framework.waits.WaitForElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
