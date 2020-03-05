@@ -1,4 +1,4 @@
-package framework.driver;
+package framework.driver.manager;
 
 public class DriverUtils {
     // This class is created for setting special configuration of driver

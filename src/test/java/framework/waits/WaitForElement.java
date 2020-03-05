@@ -1,6 +1,6 @@
 package framework.waits;
 
-import framework.driver.DriverManager;
+import framework.driver.manager.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;

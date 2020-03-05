@@ -1,7 +1,7 @@
 package framework.tests;
 
-import framework.driver.DriverManager;
-import framework.driver.DriverUtils;
+import framework.driver.manager.DriverManager;
+import framework.driver.manager.DriverUtils;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
