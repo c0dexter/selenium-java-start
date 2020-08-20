@@ -9,7 +9,7 @@ public class DriverManager {
     private static final BrowserType BROWSER_TYPE = BrowserType.FIREFOX; // TODO: change browser type here
     private static WebDriver driver;
 
-    public DriverManager() {
+    private DriverManager() {
     }
 
     public static WebDriver getWebDriver() {
