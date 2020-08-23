@@ -1,11 +1,15 @@
 package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AngelFishListPage {
+
+    private Logger logger = LogManager.getRootLogger();
 
     //Page Object
     @FindBy(css = "a.Button[href$='EST-1']")
@@ -23,5 +27,6 @@ public class AngelFishListPage {
 
     public void clickSmallAngelfishAddToCartButton() {
         smallAngelfishAddToCardButton.click();
+        logger.info("Clicked on Small Angel Fish 'Add to card' button");
     }
 }
