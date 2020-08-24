@@ -1,8 +1,6 @@
 package framework.tests;
 
-import framework.page.objects.FooterPage;
 import framework.page.objects.LandingPage;
-import framework.page.objects.LoginPage;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertTrue;
@@ -12,16 +10,15 @@ public class PositiveLoginTests extends TestBase {
     @Test
     public void asUserTryToLogInWithCorrectLoginAndPassword() {
         LandingPage landingPage = new LandingPage();
-        landingPage
+
+        boolean isBannerAfterLoginDisplayed = landingPage
                 .clickOnEnterStoreLink()
-                .clickOnSignOnLink();
+                .clickOnSignOnLink()
+                .typeIntoUserNameField("j2ee")
+                .typeIntoPasswordField("j2ee")
+                .clickOnLoginButton()
+                .isBannerAfterLoginDisplayed();
 
-        LoginPage loginPage = new LoginPage();
-        loginPage.typeIntoUserNameField("j2ee");
-        loginPage.typeIntoPasswordField("j2ee");
-        loginPage.clickOnLoginButton();
-
-        FooterPage footerPage = new FooterPage();
-        assertTrue(footerPage.isBannerAfterLoginDisplayed());
+        assertTrue(isBannerAfterLoginDisplayed);
     }
 }
