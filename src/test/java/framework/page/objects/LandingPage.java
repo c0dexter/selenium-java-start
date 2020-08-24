@@ -20,8 +20,9 @@ public class LandingPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
-    public void clickOnEnterStoreLink() {
+    public TopMenuPage clickOnEnterStoreLink() {
         enterStoreLink.click();
         logger.info("Clicked on Enter Store link");
+        return new TopMenuPage();
     }
 }
