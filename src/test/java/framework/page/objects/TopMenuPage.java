@@ -15,6 +15,16 @@ public class TopMenuPage {
     // PageFactory
     @FindBy(css = "#MenuContent a[href*='signonForm']")
     WebElement signOnLink;
+    @FindBy(css = "#QuickLinks a[href*='Id=FISH']")
+    WebElement fishButton;
+    @FindBy(css = "#QuickLinks a[href*='Id=FISH']")
+    WebElement dogsButton;
+    @FindBy(css = "#QuickLinks a[href*='Id=FISH']")
+    WebElement reptilesButton;
+    @FindBy(css = "#QuickLinks a[href*='Id=FISH']")
+    WebElement catsButton;
+    @FindBy(css = "#QuickLinks a[href*='Id=FISH']")
+    WebElement birdsButton;
 
     public TopMenuPage() {
         PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
