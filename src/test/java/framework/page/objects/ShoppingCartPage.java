@@ -1,6 +1,7 @@
 package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
+import framework.waits.WaitForElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -18,8 +19,10 @@ public class ShoppingCartPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
-    public void clickProceedToCheckoutButton() {
+    public LoginPage clickProceedToCheckoutButton() {
+        WaitForElement.waitUntilElementIsClickable(proceedToCheckoutButton);
         proceedToCheckoutButton.click();
         logger.info("Clicked on the Proceed To Checkout Button");
+        return new LoginPage();
     }
 }

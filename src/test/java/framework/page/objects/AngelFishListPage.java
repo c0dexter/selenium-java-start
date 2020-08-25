@@ -1,6 +1,7 @@
 package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
+import framework.waits.WaitForElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -25,8 +26,10 @@ public class AngelFishListPage {
         largeAngelfishAddToCardButton.click();
     }
 
-    public void clickSmallAngelfishAddToCartButton() {
+    public ShoppingCartPage clickSmallAngelfishAddToCartButton() {
+        WaitForElement.waitUntilElementIsClickable(smallAngelfishAddToCardButton);
         smallAngelfishAddToCardButton.click();
         logger.info("Clicked on Small Angel Fish 'Add to card' button");
+        return new ShoppingCartPage();
     }
 }

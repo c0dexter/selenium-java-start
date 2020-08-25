@@ -1,6 +1,7 @@
 package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
+import framework.waits.WaitForElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -25,9 +26,11 @@ public class FishListPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
-    public void clickOnAngelFishProductId() {
+    public AngelFishListPage clickOnAngelFishProductId() {
+        WaitForElement.waitUntilElementIsClickable(angelfishProductId);
         angelfishProductId.click();
         logger.info("Clicked on Small Angel Fish Product ID");
+        return new AngelFishListPage();
     }
 
     public void clickOnTigerSharkProductId() {

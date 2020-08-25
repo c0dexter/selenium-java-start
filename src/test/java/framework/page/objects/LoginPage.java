@@ -66,6 +66,7 @@ public class LoginPage {
     }
 
     public FishListPage clickOnFish() {
+        WaitForElement.waitUntilElementIsClickable(fishButton);
         fishButton.click();
         logger.info("Clicked on Fish Button");
         return new FishListPage();
