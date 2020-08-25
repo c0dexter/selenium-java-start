@@ -40,12 +40,14 @@ public class FishListPage {
     }
 
     public void clickOnKoiProductId() {
-        angelfishProductId.click();
+        WaitForElement.waitUntilElementIsClickable(angelfishProductId);
+        koiProductId.click();
+        logger.info("Clicked on Koi Product ID");
     }
 
     public void clickOnGoldFishProductId() {
-        angelfishProductId.click();
+        WaitForElement.waitUntilElementIsClickable(angelfishProductId);
+        goldfishProductId.click();
+        logger.info("Clicked on Goldfish Product ID");
     }
-
-
 }
