@@ -22,8 +22,11 @@ public class AngelFishListPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
-    public void clickLargeAngelfishAddToCartButton() {
+    public ShoppingCartPage clickLargeAngelfishAddToCartButton() {
+        WaitForElement.waitUntilElementIsClickable(largeAngelfishAddToCardButton);
         largeAngelfishAddToCardButton.click();
+        logger.info("Clicked on Large Angel Fish 'Add to card' button");
+        return new ShoppingCartPage();
     }
 
     public ShoppingCartPage clickSmallAngelfishAddToCartButton() {
