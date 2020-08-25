@@ -36,4 +36,11 @@ public class TopMenuPage {
         logger.info("Clicked on Sign on Link");
         return new LoginPage();
     }
+
+    public FishListPage clickOnFish() {
+        WaitForElement.waitUntilElementIsClickable(fishButton);
+        fishButton.click();
+        logger.info("Clicked on TOP MENU Fish Button");
+        return new FishListPage();
+    }
 }
