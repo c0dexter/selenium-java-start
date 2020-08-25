@@ -34,7 +34,9 @@ public class FishListPage {
     }
 
     public void clickOnTigerSharkProductId() {
-        angelfishProductId.click();
+        WaitForElement.waitUntilElementIsClickable(angelfishProductId);
+        tigerSharkProductId.click();
+        logger.info("Clicked on Tiger Shark Product ID");
     }
 
     public void clickOnKoiProductId() {
