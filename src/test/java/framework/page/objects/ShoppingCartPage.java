@@ -19,10 +19,9 @@ public class ShoppingCartPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
-    public LoginPage clickProceedToCheckoutButton() {
+    public void clickProceedToCheckoutButton() {
         WaitForElement.waitUntilElementIsClickable(proceedToCheckoutButton);
         proceedToCheckoutButton.click();
         logger.info("Clicked on the Proceed To Checkout Button");
-        return new LoginPage();
     }
 }
