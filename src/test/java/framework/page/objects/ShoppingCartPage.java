@@ -19,7 +19,7 @@ public class ShoppingCartPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
-    public void clickProceedToCheckoutButton() {
+    public void clickProceedToCheckoutButton() {    // TODO: tu będzie zwrócenie wartości CheckoutPage dla pozytywnego testu (nie ma dodanego takiego PageObject jeszcze)
         WaitForElement.waitUntilElementIsClickable(proceedToCheckoutButton);
         proceedToCheckoutButton.click();
         logger.info("Clicked on the Proceed To Checkout Button");
