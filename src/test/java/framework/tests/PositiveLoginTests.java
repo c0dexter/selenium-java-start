@@ -1,7 +1,7 @@
 package framework.tests;
 
 import framework.driver.manager.DriverUtils;
-import framework.page.objects.LandingPage;
+import framework.page.objects.LoginPage;
 import org.testng.annotations.Test;
 
 import static framework.navigation.ApplicationURLs.LOGIN_URL;
@@ -13,11 +13,9 @@ public class PositiveLoginTests extends TestBase {
     public void asUserTryToLogInWithCorrectLoginAndPassword() {
         DriverUtils.navigateToPage(LOGIN_URL);
 
-        LandingPage landingPage = new LandingPage();
+        LoginPage loginPage = new LoginPage();
 
-        boolean isBannerAfterLoginDisplayed = landingPage
-                .clickOnEnterStoreLink()
-                .clickOnSignOnLink()
+        boolean isBannerAfterLoginDisplayed = loginPage
                 .typeIntoUserNameField("j2ee")
                 .typeIntoPasswordField("j2ee")
                 .clickOnLoginButton()
