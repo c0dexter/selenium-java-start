@@ -61,8 +61,9 @@ public class LoginPage {
 
     public String getWarningMessage() {
         WaitForElement.waitUntilElementIsVisible(messageLabel);
-        logger.info("Returned warning message was: {}", messageLabel);
-        return messageLabel.getText();
+        String warningMessage = messageLabel.getText();
+        logger.info("Returned warning message was: {}", warningMessage);
+        return warningMessage;
     }
 
     public FishListPage clickOnFish() {
