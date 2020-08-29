@@ -7,9 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -20,14 +17,14 @@ import static org.testng.AssertJUnit.assertTrue;
 public class FluentWaitTests {
     private WebDriver driver;
 
-    @BeforeMethod
+//    @BeforeMethod
     public void beforeTest() {
         System.setProperty("webdriver.chrome.driver", "drivers/repository/chrome_v80/chromedriver");
         driver = new ChromeDriver();
         driver.navigate().to("http://theinternet.przyklady.javastart.pl/dynamic_loading/1");
     }
 
-    @Test
+//    @Test
     public void fluentWaitTest() {
         WebElement text = driver.findElement(By.id("finish"));
         assertFalse(text.isDisplayed());
@@ -48,7 +45,7 @@ public class FluentWaitTests {
         assertTrue(text.isDisplayed());
     }
 
-    @AfterMethod
+//    @AfterMethod
     public void afterTest() {
         driver.close();
         driver.quit();
