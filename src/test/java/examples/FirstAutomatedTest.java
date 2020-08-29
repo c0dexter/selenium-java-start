@@ -5,9 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,14 +16,14 @@ public class FirstAutomatedTest {
 
     private WebDriver driver;
 
-    @BeforeMethod
+//    @BeforeMethod
     public void beforeTest() {
         System.setProperty("webdriver.chrome.driver", "drivers/repository/chrome_v80/chromedriver");
         driver = new ChromeDriver();
         driver.navigate().to("http://przyklady.javastart.pl/test/full_form.html");
     }
 
-    @Test
+//    @Test
     public void typingIntoWebElementTest() {
         WebElement userNameField = driver.findElement(By.id("username"));
         userNameField.sendKeys("Selenium Start");
@@ -36,7 +33,7 @@ public class FirstAutomatedTest {
         assertEquals(typeUserNameValue, "Selenium Start");
     }
 
-    @Test
+//    @Test
     public void filePickingTest() {
         WebElement uploadFilePicker = driver.findElement(By.id("upload_file"));
         uploadFilePicker.sendKeys("/home/c0dexter/IdeaProjects/Selenium/FirstProject/test_files/some_text");
@@ -44,7 +41,7 @@ public class FirstAutomatedTest {
 
     }
 
-    @Test
+//    @Test
     public void typingAndClearingValueInsideWebElementTest() {
         WebElement userNameField = driver.findElement(By.id("username"));
         userNameField.sendKeys("Selenium Start");
@@ -58,7 +55,7 @@ public class FirstAutomatedTest {
         assertEquals(typeUserNameValue, "");
     }
 
-    @Test
+//    @Test
     public void checkRadioButtonTest() {
         WebElement maleRadioButton = driver.findElement(By.cssSelector("input[value='male']"));
         WebElement femaleRadioButton = driver.findElement(By.cssSelector("input[value='female']"));
@@ -72,7 +69,7 @@ public class FirstAutomatedTest {
 
     }
 
-    @Test
+//    @Test
     public void checkboxButtonTest() {
         WebElement pizzaCheckbox = driver.findElement(By.cssSelector("input[value='pizza']"));
         WebElement spaghettiCheckbox = driver.findElement(By.cssSelector("input[value='spaghetti']"));
@@ -99,7 +96,7 @@ public class FirstAutomatedTest {
         }
     }
 
-    @Test
+//    @Test
     public void dropDownListingTest() {
         WebElement countryWebElement = driver.findElement(By.id("country"));
         Select countryDropDown = new Select(countryWebElement);
@@ -125,7 +122,7 @@ public class FirstAutomatedTest {
         assertEquals(namesOfOptions, expectedNamesOfOptions);
     }
 
-    @Test
+//    @Test
     public void selectingOptionsFromDropDownTest() {
         WebElement countryWebElement = driver.findElement(By.id("country"));
         Select countryDropDown = new Select(countryWebElement);
@@ -146,7 +143,7 @@ public class FirstAutomatedTest {
         assertEquals(countryDropDown.getFirstSelectedOption().getText(), "UK");
     }
 
-    @Test
+//    @Test
     public void checkIfElementsOnPageTest() {
         WebElement userNameField = driver.findElement(By.id("username"));
         WebElement passwordField = driver.findElement(By.id("password"));
@@ -162,7 +159,7 @@ public class FirstAutomatedTest {
         System.out.println("Is emailLabel enabled: " + emailLabel.isEnabled());
     }
 
-    @AfterMethod
+//    @AfterMethod
     public void afterTest() {
         driver.close();
         driver.quit();

@@ -7,8 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
@@ -16,14 +14,14 @@ public class ExplicitWaitTests {
 
     private WebDriver driver;
 
-    @BeforeMethod
+//    @BeforeMethod
     public void beforeTest() {
         System.setProperty("webdriver.chrome.driver", "drivers/repository/chrome_v80/chromedriver");
         driver = new ChromeDriver();
         driver.navigate().to("http://theinternet.przyklady.javastart.pl/dynamic_controls");
     }
 
-    @Test
+//    @Test
     public void waitForDisappearingElement() {
         WebElement checkbox = driver.findElement(By.id("checkbox"));
         assertTrue(checkbox.isDisplayed());
@@ -38,7 +36,7 @@ public class ExplicitWaitTests {
         assertEquals(messageLabel.getText(), "It's gone!");
     }
 
-    @Test
+//    @Test
     public void waitForPresenceOfTheElement() {
         WebElement checkbox = driver.findElement(By.id("checkbox"));
 
