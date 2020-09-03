@@ -2,13 +2,16 @@ examples/ActionsTest.class
 examples/HoverTests.class
 examples/WebElementTests.class
 framework/navigation/ApplicationURLs.class
+configuration/AppProperties.class
 framework/tests/TestBase.class
 examples/FileUploadTests.class
 examples/CalculatorTest.class
 examples/ExplicitWaitTests.class
+configuration/PropertiesLoader.class
 framework/tests/PositiveLoginTests.class
 framework/page/objects/FooterPage.class
 framework/driver/BrowserFactory.class
+configuration/ConfigurationProperties.class
 examples/FirstAutomatedTest.class
 framework/page/objects/LandingPage.class
 framework/page/objects/TopMenuPage.class
@@ -24,6 +27,7 @@ framework/driver/manager/DriverManager.class
 framework/tests/FailedLoginTests.class
 framework/driver/manager/DriverUtils.class
 framework/waits/WaitForElement.class
+configuration/LocalWebDriverProperties.class
 examples/DropDownTests.class
 examples/Calculator.class
 framework/page/objects/ShoppingCartPage.class
