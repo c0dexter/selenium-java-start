@@ -1,9 +1,11 @@
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/tests/PositiveLoginTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/waits/WaitForElement.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/ConfigurationProperties.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/navigation/ApplicationURLs.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/page/objects/TopMenuPage.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/FileUploadTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/Calculator.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/AppProperties.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/BrowserType.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/BrowserFactory.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/page/objects/ShoppingCartPage.java
@@ -26,6 +28,8 @@
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/WebElementTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/FluentWaitTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/tests/FailedLoginTests.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/LocalWebDriverProperties.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/PropertiesLoader.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/WaitUntil.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/CalculatorTest.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/DropDownTests.java
