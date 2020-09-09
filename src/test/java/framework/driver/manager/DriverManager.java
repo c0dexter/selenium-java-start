@@ -1,9 +1,11 @@
 package framework.driver.manager;
 
-import configuration.LocalWebDriverProperties;
 import framework.driver.BrowserFactory;
 import framework.driver.BrowserType;
 import org.openqa.selenium.WebDriver;
+
+import static configuration.TestRunProperties.getBrowserTypeToRun;
+import static configuration.TestRunProperties.getIsRemoteRun;
 
 public class DriverManager {
 
@@ -14,7 +16,8 @@ public class DriverManager {
 
     public static WebDriver getWebDriver() {
         if (driver == null) {
-            driver = BrowserFactory.getBrowser(LocalWebDriverProperties.getLocalBrowser());
+            BrowserFactory browserFactory = new BrowserFactory(getBrowserTypeToRun(), getIsRemoteRun());
+            driver = browserFactory.getBrowser();
         }
         return driver;
     }
@@ -25,7 +28,7 @@ public class DriverManager {
         // Dla geckodriver wywołanie metody close(),
         // powoduje też zabicie instancji drivera (dodatkowo wywołuje metodę quit()),
         // gdy mamy tylko jedno okno przeglądarki). Dlatego ten przypadek należy obsłużyć aby pozbyć się błędu dla FF.
-        if (!LocalWebDriverProperties.getLocalBrowser().equals(BrowserType.FIREFOX)){
+        if (!getBrowserTypeToRun().equals(BrowserType.FIREFOX)){
             driver.quit();
         }
 
