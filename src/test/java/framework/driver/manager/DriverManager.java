@@ -9,33 +9,29 @@ import static configuration.TestRunProperties.getIsRemoteRun;
 
 public class DriverManager {
 
-    private static WebDriver driver;
+    private static ThreadLocal<WebDriver> webDriverThreadLocal = new ThreadLocal<>();
 
     private DriverManager() {
     }
 
     public static WebDriver getWebDriver() {
-        if (driver == null) {
-            BrowserFactory browserFactory = new BrowserFactory(getBrowserTypeToRun(), getIsRemoteRun());
-            driver = browserFactory.getBrowser();
+        if (webDriverThreadLocal.get() == null) {
+            webDriverThreadLocal.set(new BrowserFactory(getBrowserTypeToRun(), getIsRemoteRun()).getBrowser());
         }
-        return driver;
+        return webDriverThreadLocal.get();
     }
 
     public static void disposeDriver() {
-        driver.close();
+        webDriverThreadLocal.get().close();
 
         // Dla geckodriver wywołanie metody close(),
         // powoduje też zabicie instancji drivera (dodatkowo wywołuje metodę quit()),
         // gdy mamy tylko jedno okno przeglądarki). Dlatego ten przypadek należy obsłużyć aby pozbyć się błędu dla FF.
-        if (!getBrowserTypeToRun().equals(BrowserType.FIREFOX)){
-            driver.quit();
+        if (!getBrowserTypeToRun().equals(BrowserType.FIREFOX)) {
+            webDriverThreadLocal.get().quit();
         }
 
-        // Przypisane wartości null jest konieczne, ponieważ w pamięci Javy po wykonaniu metody quit(),
-        // dalej znajduje się obiekt klasy WebDrivera, i musimy go po prostu z fizycznie usunąć.
-        // Inaczej przy kolejnym wywołaniu metody getDriver(),
-        // metoda nie zwróci nam nowego obiektu, lecz stary, który już wyłączył okno przeglądarki.
-        driver = null;
+        // Wywołanie metody remove() z klasy ThreadLocal dla danego wątku w celu usunięcia WebDrivera dla aktualnego wątku
+        webDriverThreadLocal.remove();
     }
 }
