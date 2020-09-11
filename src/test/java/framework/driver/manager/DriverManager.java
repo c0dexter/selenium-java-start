@@ -53,14 +53,13 @@ public class DriverManager {
     public static void disposeDriver() {
         webDriverThreadLocal.get().close();
 
-        // Dla geckodriver wywołanie metody close(),
-        // powoduje też zabicie instancji drivera (dodatkowo wywołuje metodę quit()),
-        // gdy mamy tylko jedno okno przeglądarki). Dlatego ten przypadek należy obsłużyć aby pozbyć się błędu dla FF.
-        if (!getBrowserTypeToRun().equals(BrowserType.FIREFOX)) {
+        //Sprawdzenie czy dla danego wątku przeglądarka to Firefox
+        if (!browserTypeThreadLocal.get().equals(BrowserType.FIREFOX)) {
             webDriverThreadLocal.get().quit();
         }
 
-        // Wywołanie metody remove() z klasy ThreadLocal dla danego wątku w celu usunięcia WebDrivera dla aktualnego wątku
+        //Usunięcie zmiennych typu BrowserType oraz WebDriver dla danego wątku
         webDriverThreadLocal.remove();
+        browserTypeThreadLocal.remove();
     }
 }
