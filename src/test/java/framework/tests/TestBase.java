@@ -2,11 +2,10 @@ package framework.tests;
 
 import configuration.ConfigurationProperties;
 import configuration.PropertiesLoader;
+import framework.driver.BrowserType;
 import framework.driver.manager.DriverManager;
 import framework.driver.manager.DriverUtils;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 
 import java.util.Properties;
 
@@ -21,8 +20,11 @@ public class TestBase {
         ConfigurationProperties.setProperties(propertiesFromFile);
     }
 
+    @Parameters("browser") // Zaciągane z all_test_suite.xml
     @BeforeMethod
-    public void beforeTest() {
+    public void beforeTest(@Optional BrowserType browserType) { // Optional, bo test może NIE być odpalony z XMLa)
+        DriverManager.setWebDriver(browserType); // Jeśli nie jest odpalony z XMLa, wtedy parametr jest nullem -> obsługa w DriverManager
+        DriverManager.getWebDriver();
         DriverUtils.setInitialConfiguration();
         DriverUtils.navigateToPage(APPLICATION_URL);
     }
