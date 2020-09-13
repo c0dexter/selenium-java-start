@@ -1,49 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="All Pet Store Tests" duration-ms="27021" started-at="2020-09-03T16:59:52 CEST" finished-at="2020-09-03T17:00:19 CEST">
+  <suite name="All Pet Store Tests" duration-ms="9876" started-at="2020-09-13T21:36:20 CEST" finished-at="2020-09-13T21:36:30 CEST">
     <groups>
     </groups>
-    <test name="Negative Login Tests" duration-ms="5159" started-at="2020-09-03T16:59:52 CEST" finished-at="2020-09-03T16:59:58 CEST">
+    <test name="Negative Login Tests" duration-ms="9876" started-at="2020-09-13T21:36:20 CEST" finished-at="2020-09-13T21:36:30 CEST">
       <class name="framework.tests.FailedLoginTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.tests.FailedLoginTests@6e06451e]" name="beforeClass" is-config="true" duration-ms="77" started-at="2020-09-03T16:59:52 CEST" finished-at="2020-09-03T16:59:53 CEST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.tests.FailedLoginTests@3f28bd56]" name="beforeClass" is-config="true" duration-ms="758" started-at="2020-09-13T21:36:20 CEST" finished-at="2020-09-13T21:36:21 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.tests.FailedLoginTests@6e06451e]" name="beforeTest" is-config="true" duration-ms="2874" started-at="2020-09-03T16:59:53 CEST" finished-at="2020-09-03T16:59:55 CEST">
+        <test-method status="PASS" signature="beforeTest(framework.driver.BrowserType)[pri:0, instance:framework.tests.FailedLoginTests@3f28bd56]" name="beforeTest" is-config="true" duration-ms="7491" started-at="2020-09-13T21:36:21 CEST" finished-at="2020-09-13T21:36:29 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="asUserTryToLogInWithIncorrectLoginAndPassword()[pri:0, instance:framework.tests.FailedLoginTests@6e06451e]" name="asUserTryToLogInWithIncorrectLoginAndPassword" duration-ms="1902" started-at="2020-09-03T16:59:55 CEST" finished-at="2020-09-03T16:59:57 CEST">
+        <test-method status="PASS" signature="asUserTryToLogInWithIncorrectLoginAndPassword()[pri:0, instance:framework.tests.FailedLoginTests@3f28bd56]" name="asUserTryToLogInWithIncorrectLoginAndPassword" duration-ms="735" started-at="2020-09-13T21:36:29 CEST" finished-at="2020-09-13T21:36:29 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asUserTryToLogInWithIncorrectLoginAndPassword -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.tests.FailedLoginTests@6e06451e]" name="afterTest" is-config="true" duration-ms="270" started-at="2020-09-03T16:59:57 CEST" finished-at="2020-09-03T16:59:58 CEST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.tests.FailedLoginTests@3f28bd56]" name="afterTest" is-config="true" duration-ms="675" started-at="2020-09-13T21:36:29 CEST" finished-at="2020-09-13T21:36:30 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- framework.tests.FailedLoginTests -->
     </test> <!-- Negative Login Tests -->
-    <test name="Positive Login Tests" duration-ms="21843" started-at="2020-09-03T16:59:58 CEST" finished-at="2020-09-03T17:00:19 CEST">
-      <class name="framework.tests.PositiveLoginTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.tests.PositiveLoginTests@31dc339b]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-09-03T16:59:58 CEST" finished-at="2020-09-03T16:59:58 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.tests.PositiveLoginTests@31dc339b]" name="beforeTest" is-config="true" duration-ms="3520" started-at="2020-09-03T16:59:58 CEST" finished-at="2020-09-03T17:00:01 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="asUserTryToLogInWithCorrectLoginAndPassword()[pri:0, instance:framework.tests.PositiveLoginTests@31dc339b]" name="asUserTryToLogInWithCorrectLoginAndPassword" duration-ms="1219" started-at="2020-09-03T17:00:01 CEST" finished-at="2020-09-03T17:00:02 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- asUserTryToLogInWithCorrectLoginAndPassword -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.tests.PositiveLoginTests@31dc339b]" name="afterTest" is-config="true" duration-ms="17100" started-at="2020-09-03T17:00:02 CEST" finished-at="2020-09-03T17:00:19 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- framework.tests.PositiveLoginTests -->
-    </test> <!-- Positive Login Tests -->
   </suite> <!-- All Pet Store Tests -->
 </testng-results>

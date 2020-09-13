@@ -5,6 +5,7 @@
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/page/objects/TopMenuPage.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/FileUploadTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/Calculator.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/tests/SeleniumGridExampleTest.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/AppProperties.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/BrowserType.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/BrowserFactory.java
@@ -17,6 +18,7 @@
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/FirstAutomatedTest.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/FluentWaitTests2.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/CheckBoxesTests.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/TestRunProperties.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/page/objects/AngelFishListPage.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/manager/DriverUtils.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/page/objects/LoginPage.java

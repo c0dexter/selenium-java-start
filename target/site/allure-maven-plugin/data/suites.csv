@@ -1,0 +1,3 @@
+"Status","Name","Duration in ms","Description"
+"passed","framework.tests.PositiveLoginTests.asUserTryToLogInWithCorrectLoginAndPassword","1338",""
+"passed","framework.tests.FailedLoginTests.asUserTryToLogInWithIncorrectLoginAndPassword","733",""

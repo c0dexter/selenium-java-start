@@ -1,0 +1,41 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "c0dexter-HP-EliteBook-8540w",
+    "children" : [ {
+      "name" : "25409@c0dexter-HP-EliteBook-8540w.TestNG-tests-2(14)",
+      "children" : [ {
+        "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
+        "uid" : "f72a5ce8b0af7b16",
+        "parentUid" : "e73fb54ff46b59ce593673362eef7f05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600025784662,
+          "stop" : 1600025786000,
+          "duration" : 1338
+        },
+        "flaky" : false,
+        "parameters" : [ "CHROME" ]
+      } ],
+      "uid" : "e73fb54ff46b59ce593673362eef7f05"
+    }, {
+      "name" : "25409@c0dexter-HP-EliteBook-8540w.TestNG-tests-1(13)",
+      "children" : [ {
+        "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
+        "uid" : "833f6fc3ab7fc0ab",
+        "parentUid" : "5b903008e216dd70be6d6641556abfb4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600025789010,
+          "stop" : 1600025789743,
+          "duration" : 733
+        },
+        "flaky" : false,
+        "parameters" : [ "FIREFOX" ]
+      } ],
+      "uid" : "5b903008e216dd70be6d6641556abfb4"
+    } ],
+    "uid" : "c9e54022de7af78312902ee1de21a270"
+  } ],
+  "name" : "timeline"
+}

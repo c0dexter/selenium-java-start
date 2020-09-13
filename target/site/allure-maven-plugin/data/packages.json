@@ -1,0 +1,41 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "framework.tests",
+    "children" : [ {
+      "name" : "PositiveLoginTests",
+      "children" : [ {
+        "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
+        "uid" : "f72a5ce8b0af7b16",
+        "parentUid" : "ded611bb656d8c2e044a4f155fd1c1b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600025784662,
+          "stop" : 1600025786000,
+          "duration" : 1338
+        },
+        "flaky" : false,
+        "parameters" : [ "CHROME" ]
+      } ],
+      "uid" : "ded611bb656d8c2e044a4f155fd1c1b6"
+    }, {
+      "name" : "FailedLoginTests",
+      "children" : [ {
+        "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
+        "uid" : "833f6fc3ab7fc0ab",
+        "parentUid" : "775f4aa2b4775c27bbbb9a27f00f07f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600025789010,
+          "stop" : 1600025789743,
+          "duration" : 733
+        },
+        "flaky" : false,
+        "parameters" : [ "FIREFOX" ]
+      } ],
+      "uid" : "775f4aa2b4775c27bbbb9a27f00f07f8"
+    } ],
+    "uid" : "framework.tests"
+  } ],
+  "name" : "packages"
+}
