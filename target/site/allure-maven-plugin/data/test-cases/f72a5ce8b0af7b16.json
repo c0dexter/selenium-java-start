@@ -1,0 +1,94 @@
+{
+  "uid" : "f72a5ce8b0af7b16",
+  "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
+  "fullName" : "framework.tests.PositiveLoginTests.asUserTryToLogInWithCorrectLoginAndPassword",
+  "historyId" : "7bfc53bce9b25b88b8cb9a6423ae7bb0",
+  "time" : {
+    "start" : 1600025784662,
+    "stop" : 1600025786000,
+    "duration" : 1338
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1600025781879,
+      "stop" : 1600025784408,
+      "duration" : 2529
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1600025786021,
+      "stop" : 1600025786143,
+      "duration" : 122
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "framework.tests.PositiveLoginTests"
+  }, {
+    "name" : "testClass",
+    "value" : "framework.tests.PositiveLoginTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "asUserTryToLogInWithCorrectLoginAndPassword"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Pet Store Tests"
+  }, {
+    "name" : "suite",
+    "value" : "Positive Login Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "framework.tests.PositiveLoginTests"
+  }, {
+    "name" : "host",
+    "value" : "c0dexter-HP-EliteBook-8540w"
+  }, {
+    "name" : "thread",
+    "value" : "25409@c0dexter-HP-EliteBook-8540w.TestNG-tests-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "CHROME"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f72a5ce8b0af7b16.json",
+  "parameterValues" : [ "CHROME" ]
+}
