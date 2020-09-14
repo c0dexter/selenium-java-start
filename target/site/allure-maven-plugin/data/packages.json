@@ -6,13 +6,13 @@
       "name" : "PositiveLoginTests",
       "children" : [ {
         "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
-        "uid" : "f72a5ce8b0af7b16",
+        "uid" : "39143252f767dde8",
         "parentUid" : "ded611bb656d8c2e044a4f155fd1c1b6",
         "status" : "passed",
         "time" : {
-          "start" : 1600025784662,
-          "stop" : 1600025786000,
-          "duration" : 1338
+          "start" : 1600101003717,
+          "stop" : 1600101005789,
+          "duration" : 2072
         },
         "flaky" : false,
         "parameters" : [ "CHROME" ]
@@ -22,13 +22,13 @@
       "name" : "FailedLoginTests",
       "children" : [ {
         "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
-        "uid" : "833f6fc3ab7fc0ab",
+        "uid" : "c86a69883f13fd88",
         "parentUid" : "775f4aa2b4775c27bbbb9a27f00f07f8",
         "status" : "passed",
         "time" : {
-          "start" : 1600025789010,
-          "stop" : 1600025789743,
-          "duration" : 733
+          "start" : 1600101009273,
+          "stop" : 1600101010008,
+          "duration" : 735
         },
         "flaky" : false,
         "parameters" : [ "FIREFOX" ]

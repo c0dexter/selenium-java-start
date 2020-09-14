@@ -2,6 +2,7 @@ package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
 import framework.waits.WaitForElement;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -19,6 +20,7 @@ public class FooterPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
     }
 
+    @Step("Getting is dog banner is displayed")
     public Boolean isBannerAfterLoginDisplayed() {
         WaitForElement.waitUntilElementIsVisible(banner);
         boolean isDisplayed = banner.isDisplayed();
