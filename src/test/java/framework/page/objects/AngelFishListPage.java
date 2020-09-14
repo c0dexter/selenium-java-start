@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AngelFishListPage {
 
-    private Logger logger = LogManager.getRootLogger();
+    private Logger logger = LogManager.getLogger(AngelFishListPage.class);
 
     //Page Object
     @FindBy(css = "a.Button[href$='EST-1']")

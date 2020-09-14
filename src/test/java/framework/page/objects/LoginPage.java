@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
     // Logowanie przebigu testu - inicjalizowanie loggera
-    private Logger logger = LogManager.getRootLogger();
+    private Logger logger = LogManager.getLogger(LoginPage.class);
 
     // Page Factory
     @FindBy(name = "username")
