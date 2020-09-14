@@ -1,69 +1,39 @@
 {
-  "uid" : "c86a69883f13fd88",
-  "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
-  "fullName" : "framework.tests.FailedLoginTests.asUserTryToLogInWithIncorrectLoginAndPassword",
-  "historyId" : "a3f9da3ae540f0a5b2dab734b4e713e3",
+  "uid" : "33647e141717700f",
+  "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
+  "fullName" : "framework.tests.PositiveLoginTests.asUserTryToLogInWithCorrectLoginAndPassword",
+  "historyId" : "7bfc53bce9b25b88b8cb9a6423ae7bb0",
   "time" : {
-    "start" : 1600101009273,
-    "stop" : 1600101010008,
-    "duration" : 735
+    "start" : 1600101549843,
+    "stop" : 1600101551422,
+    "duration" : 1579
   },
-  "description" : "The goal of this test is to log in using not proper username and password and check if warning message Invalid username or password is displayed",
-  "descriptionHtml" : "<p>The goal of this test is to log in using not proper username and password and check if warning message Invalid username or password is displayed</p>\n",
+  "description" : "The goal of this test is to log in using proper username and password and check if Dog Banner is displayed after",
+  "descriptionHtml" : "<p>The goal of this test is to log in using proper username and password and check if Dog Banner is displayed after</p>\n",
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
-    "name" : "beforeClass",
-    "time" : {
-      "start" : 1600100999013,
-      "stop" : 1600101000365,
-      "duration" : 1352
-    },
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "Loading configuration from configuration.properties",
-      "time" : {
-        "start" : 1600100999060,
-        "stop" : 1600101000365,
-        "duration" : 1305
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 1,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : true
-  }, {
     "name" : "beforeTest",
     "time" : {
-      "start" : 1600101000367,
-      "stop" : 1600101009263,
-      "duration" : 8896
+      "start" : 1600101546718,
+      "stop" : 1600101549455,
+      "duration" : 2737
     },
     "status" : "passed",
     "steps" : [ {
-      "name" : "Setting up browser to: FIREFOX and navigating to Home Page",
+      "name" : "Setting up browser to: CHROME and navigating to Home Page",
       "time" : {
-        "start" : 1600101000367,
-        "stop" : 1600101009263,
-        "duration" : 8896
+        "start" : 1600101546719,
+        "stop" : 1600101549455,
+        "duration" : 2736
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Maximizing browser window",
         "time" : {
-          "start" : 1600101008485,
-          "stop" : 1600101008939,
-          "duration" : 454
+          "start" : 1600101548934,
+          "stop" : 1600101549099,
+          "duration" : 165
         },
         "status" : "passed",
         "steps" : [ ],
@@ -76,9 +46,9 @@
       }, {
         "name" : "Navigating to URL: http://przyklady.javastart.pl/jpetstore/",
         "time" : {
-          "start" : 1600101008939,
-          "stop" : 1600101009263,
-          "duration" : 324
+          "start" : 1600101549102,
+          "stop" : 1600101549455,
+          "duration" : 353
         },
         "status" : "passed",
         "steps" : [ ],
@@ -95,7 +65,7 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "browserType",
-        "value" : "FIREFOX"
+        "value" : "CHROME"
       } ],
       "stepsCount" : 2,
       "attachmentsCount" : 0,
@@ -114,9 +84,9 @@
     "steps" : [ {
       "name" : "Navigating to URL: http://przyklady.javastart.pl/jpetstore/actions/Account.action?signonForm=",
       "time" : {
-        "start" : 1600101009276,
-        "stop" : 1600101009535,
-        "duration" : 259
+        "start" : 1600101549850,
+        "stop" : 1600101550157,
+        "duration" : 307
       },
       "status" : "passed",
       "steps" : [ ],
@@ -130,36 +100,36 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "Type into User Name Field NotExistingLogin",
+      "name" : "Type into User Name Field j2ee",
       "time" : {
-        "start" : 1600101009538,
-        "stop" : 1600101009690,
-        "duration" : 152
+        "start" : 1600101550262,
+        "stop" : 1600101550672,
+        "duration" : 410
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "username",
-        "value" : "NotExistingLogin"
+        "value" : "j2ee"
       } ],
       "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "Type into Password Field: NotProperPassword",
+      "name" : "Type into Password Field: j2ee",
       "time" : {
-        "start" : 1600101009691,
-        "stop" : 1600101009767,
-        "duration" : 76
+        "start" : 1600101550672,
+        "stop" : 1600101550864,
+        "duration" : 192
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "password",
-        "value" : "NotProperPassword"
+        "value" : "j2ee"
       } ],
       "stepsCount" : 0,
       "attachmentsCount" : 0,
@@ -168,9 +138,9 @@
     }, {
       "name" : "Click on Login Button",
       "time" : {
-        "start" : 1600101009767,
-        "stop" : 1600101009900,
-        "duration" : 133
+        "start" : 1600101550864,
+        "stop" : 1600101551180,
+        "duration" : 316
       },
       "status" : "passed",
       "steps" : [ ],
@@ -181,11 +151,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Getting warning message from Login Page",
+      "name" : "Getting is dog banner is displayed",
       "time" : {
-        "start" : 1600101009900,
-        "stop" : 1600101010007,
-        "duration" : 107
+        "start" : 1600101551181,
+        "stop" : 1600101551413,
+        "duration" : 232
       },
       "status" : "passed",
       "steps" : [ ],
@@ -206,17 +176,17 @@
   "afterStages" : [ {
     "name" : "afterTest",
     "time" : {
-      "start" : 1600101010013,
-      "stop" : 1600101010847,
-      "duration" : 834
+      "start" : 1600101551441,
+      "stop" : 1600101552029,
+      "duration" : 588
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Disposing browser",
       "time" : {
-        "start" : 1600101010013,
-        "stop" : 1600101010847,
-        "duration" : 834
+        "start" : 1600101551441,
+        "stop" : 1600101552029,
+        "duration" : 588
       },
       "status" : "passed",
       "steps" : [ ],
@@ -236,28 +206,28 @@
   } ],
   "labels" : [ {
     "name" : "package",
-    "value" : "framework.tests.FailedLoginTests"
+    "value" : "framework.tests.PositiveLoginTests"
   }, {
     "name" : "testClass",
-    "value" : "framework.tests.FailedLoginTests"
+    "value" : "framework.tests.PositiveLoginTests"
   }, {
     "name" : "testMethod",
-    "value" : "asUserTryToLogInWithIncorrectLoginAndPassword"
+    "value" : "asUserTryToLogInWithCorrectLoginAndPassword"
   }, {
     "name" : "parentSuite",
     "value" : "All Pet Store Tests"
   }, {
     "name" : "suite",
-    "value" : "Negative Login Tests"
+    "value" : "Positive Login Tests"
   }, {
     "name" : "subSuite",
-    "value" : "framework.tests.FailedLoginTests"
+    "value" : "framework.tests.PositiveLoginTests"
   }, {
     "name" : "host",
     "value" : "c0dexter-HP-EliteBook-8540w"
   }, {
     "name" : "thread",
-    "value" : "30696@c0dexter-HP-EliteBook-8540w.TestNG-tests-1(13)"
+    "value" : "388@c0dexter-HP-EliteBook-8540w.TestNG-tests-2(14)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -266,14 +236,14 @@
     "value" : "java"
   }, {
     "name" : "severity",
-    "value" : "normal"
+    "value" : "blocker"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
   "parameters" : [ {
     "name" : "browser",
-    "value" : "FIREFOX"
+    "value" : "CHROME"
   } ],
   "links" : [ {
     "name" : "ID-1",
@@ -283,11 +253,11 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "normal",
+    "severity" : "blocker",
     "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c86a69883f13fd88.json",
-  "parameterValues" : [ "FIREFOX" ]
+  "source" : "33647e141717700f.json",
+  "parameterValues" : [ "CHROME" ]
 }
