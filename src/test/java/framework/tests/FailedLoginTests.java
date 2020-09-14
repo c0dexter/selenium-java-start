@@ -2,10 +2,7 @@ package framework.tests;
 
 import framework.driver.manager.DriverUtils;
 import framework.page.objects.LoginPage;
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.TmsLink;
+import io.qameta.allure.*;
 import org.testng.annotations.Test;
 
 import static framework.navigation.ApplicationURLs.LOGIN_URL;
@@ -13,6 +10,7 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class FailedLoginTests extends TestBase {
 
+    @Issue("DEFECT-1")
     @TmsLink("ID-1")
     @Severity(SeverityLevel.NORMAL)
     @Test
