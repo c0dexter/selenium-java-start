@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class FishListPage {
 
-    private Logger logger = LogManager.getRootLogger();
+    private Logger logger = LogManager.getLogger(FishListPage.class);
 
     //Page Object
     @FindBy(css = "a[href$='FI-SW-01']")

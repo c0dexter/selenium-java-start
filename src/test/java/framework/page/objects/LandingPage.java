@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 // Page Object of first page
 public class LandingPage {
 
-    private Logger logger = LogManager.getRootLogger();
+    private Logger logger = LogManager.getLogger(LandingPage.class);
 
     // PageFactory
     @FindBy(css = "#Content a")

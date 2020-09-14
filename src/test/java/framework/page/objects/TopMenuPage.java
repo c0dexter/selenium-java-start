@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TopMenuPage {
 
-    private Logger logger = LogManager.getRootLogger();
+    private Logger logger = LogManager.getLogger(TopMenuPage.class);
 
     // PageFactory
     @FindBy(css = "#MenuContent a[href*='signonForm']")

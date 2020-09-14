@@ -2,6 +2,7 @@ package framework.driver.manager;
 
 import framework.driver.BrowserFactory;
 import framework.driver.BrowserType;
+import framework.driver.listeners.WebDriverEventListenerRegistrar;
 import org.openqa.selenium.WebDriver;
 
 import static configuration.TestRunProperties.getBrowserTypeToRun;
@@ -33,6 +34,9 @@ public class DriverManager {
             //To znaczy, że został on zdefiniowany w pliku TestNG XML i możemy go używać
             browser = new BrowserFactory(browserType, getIsRemoteRun()).getBrowser();
         }
+
+        //Rejestracja obiektu WebDrivera
+        browser = WebDriverEventListenerRegistrar.registerWebDriverEventListener(browser);
 
         //Dodanie do puli instancji ThreadLocal za pomocą metody set() instancji klasy BrowserType
         browserTypeThreadLocal.set(browserType);
