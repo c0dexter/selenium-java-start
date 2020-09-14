@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="All Pet Store Tests" duration-ms="11664" started-at="2020-09-14T18:16:57 CEST" finished-at="2020-09-14T18:17:09 CEST">
+  <suite name="All Pet Store Tests" duration-ms="11903" started-at="2020-09-14T18:29:58 CEST" finished-at="2020-09-14T18:30:10 CEST">
     <groups>
     </groups>
-    <test name="Negative Login Tests" duration-ms="11664" started-at="2020-09-14T18:16:57 CEST" finished-at="2020-09-14T18:17:09 CEST">
+    <test name="Negative Login Tests" duration-ms="11903" started-at="2020-09-14T18:29:58 CEST" finished-at="2020-09-14T18:30:10 CEST">
       <class name="framework.tests.FailedLoginTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.tests.FailedLoginTests@46074492]" name="beforeClass" is-config="true" duration-ms="1479" started-at="2020-09-14T18:16:57 CEST" finished-at="2020-09-14T18:16:59 CEST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.tests.FailedLoginTests@2a2da905]" name="beforeClass" is-config="true" duration-ms="1377" started-at="2020-09-14T18:29:58 CEST" finished-at="2020-09-14T18:30:00 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeTest(framework.driver.BrowserType)[pri:0, instance:framework.tests.FailedLoginTests@46074492]" name="beforeTest" is-config="true" duration-ms="8560" started-at="2020-09-14T18:16:59 CEST" finished-at="2020-09-14T18:17:07 CEST">
+        <test-method status="PASS" signature="beforeTest(framework.driver.BrowserType)[pri:0, instance:framework.tests.FailedLoginTests@2a2da905]" name="beforeTest" is-config="true" duration-ms="8897" started-at="2020-09-14T18:30:00 CEST" finished-at="2020-09-14T18:30:09 CEST">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="asUserTryToLogInWithIncorrectLoginAndPassword()[pri:0, instance:framework.tests.FailedLoginTests@46074492]" name="asUserTryToLogInWithIncorrectLoginAndPassword" duration-ms="760" started-at="2020-09-14T18:17:07 CEST" finished-at="2020-09-14T18:17:08 CEST">
+        <test-method status="PASS" signature="asUserTryToLogInWithIncorrectLoginAndPassword()[pri:0, instance:framework.tests.FailedLoginTests@2a2da905]" name="asUserTryToLogInWithIncorrectLoginAndPassword" duration-ms="738" started-at="2020-09-14T18:30:09 CEST" finished-at="2020-09-14T18:30:10 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asUserTryToLogInWithIncorrectLoginAndPassword -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.tests.FailedLoginTests@46074492]" name="afterTest" is-config="true" duration-ms="814" started-at="2020-09-14T18:17:08 CEST" finished-at="2020-09-14T18:17:09 CEST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.tests.FailedLoginTests@2a2da905]" name="afterTest" is-config="true" duration-ms="835" started-at="2020-09-14T18:30:10 CEST" finished-at="2020-09-14T18:30:10 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

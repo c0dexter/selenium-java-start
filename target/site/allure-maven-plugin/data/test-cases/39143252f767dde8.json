@@ -1,12 +1,12 @@
 {
-  "uid" : "871f97e039e22cba",
+  "uid" : "39143252f767dde8",
   "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
   "fullName" : "framework.tests.PositiveLoginTests.asUserTryToLogInWithCorrectLoginAndPassword",
   "historyId" : "7bfc53bce9b25b88b8cb9a6423ae7bb0",
   "time" : {
-    "start" : 1600100222694,
-    "stop" : 1600100224473,
-    "duration" : 1779
+    "start" : 1600101003717,
+    "stop" : 1600101005789,
+    "duration" : 2072
   },
   "description" : "The goal of this test is to log in using proper username and password and check if Dog Banner is displayed after",
   "descriptionHtml" : "<p>The goal of this test is to log in using proper username and password and check if Dog Banner is displayed after</p>\n",
@@ -15,25 +15,25 @@
   "beforeStages" : [ {
     "name" : "beforeTest",
     "time" : {
-      "start" : 1600100218842,
-      "stop" : 1600100222301,
-      "duration" : 3459
+      "start" : 1600100999975,
+      "stop" : 1600101003263,
+      "duration" : 3288
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Setting up browser to: CHROME and navigating to Home Page",
       "time" : {
-        "start" : 1600100218845,
-        "stop" : 1600100222301,
-        "duration" : 3456
+        "start" : 1600100999977,
+        "stop" : 1600101003263,
+        "duration" : 3286
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Maximizing browser window",
         "time" : {
-          "start" : 1600100221428,
-          "stop" : 1600100221702,
-          "duration" : 274
+          "start" : 1600101002392,
+          "stop" : 1600101002682,
+          "duration" : 290
         },
         "status" : "passed",
         "steps" : [ ],
@@ -46,9 +46,9 @@
       }, {
         "name" : "Navigating to URL: http://przyklady.javastart.pl/jpetstore/",
         "time" : {
-          "start" : 1600100221705,
-          "stop" : 1600100222301,
-          "duration" : 596
+          "start" : 1600101002684,
+          "stop" : 1600101003262,
+          "duration" : 578
         },
         "status" : "passed",
         "steps" : [ ],
@@ -84,9 +84,9 @@
     "steps" : [ {
       "name" : "Navigating to URL: http://przyklady.javastart.pl/jpetstore/actions/Account.action?signonForm=",
       "time" : {
-        "start" : 1600100222725,
-        "stop" : 1600100222983,
-        "duration" : 258
+        "start" : 1600101003736,
+        "stop" : 1600101004056,
+        "duration" : 320
       },
       "status" : "passed",
       "steps" : [ ],
@@ -102,9 +102,9 @@
     }, {
       "name" : "Type into User Name Field j2ee",
       "time" : {
-        "start" : 1600100223130,
-        "stop" : 1600100223628,
-        "duration" : 498
+        "start" : 1600101004193,
+        "stop" : 1600101004806,
+        "duration" : 613
       },
       "status" : "passed",
       "steps" : [ ],
@@ -120,9 +120,9 @@
     }, {
       "name" : "Type into Password Field: j2ee",
       "time" : {
-        "start" : 1600100223629,
-        "stop" : 1600100223833,
-        "duration" : 204
+        "start" : 1600101004807,
+        "stop" : 1600101005000,
+        "duration" : 193
       },
       "status" : "passed",
       "steps" : [ ],
@@ -138,9 +138,9 @@
     }, {
       "name" : "Click on Login Button",
       "time" : {
-        "start" : 1600100223834,
-        "stop" : 1600100224193,
-        "duration" : 359
+        "start" : 1600101005001,
+        "stop" : 1600101005556,
+        "duration" : 555
       },
       "status" : "passed",
       "steps" : [ ],
@@ -153,9 +153,9 @@
     }, {
       "name" : "Getting is dog banner is displayed",
       "time" : {
-        "start" : 1600100224193,
-        "stop" : 1600100224462,
-        "duration" : 269
+        "start" : 1600101005556,
+        "stop" : 1600101005777,
+        "duration" : 221
       },
       "status" : "passed",
       "steps" : [ ],
@@ -176,17 +176,17 @@
   "afterStages" : [ {
     "name" : "afterTest",
     "time" : {
-      "start" : 1600100224494,
-      "stop" : 1600100224780,
-      "duration" : 286
+      "start" : 1600101005816,
+      "stop" : 1600101006379,
+      "duration" : 563
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Disposing browser",
       "time" : {
-        "start" : 1600100224495,
-        "stop" : 1600100224780,
-        "duration" : 285
+        "start" : 1600101005816,
+        "stop" : 1600101006379,
+        "duration" : 563
       },
       "status" : "passed",
       "steps" : [ ],
@@ -227,7 +227,7 @@
     "value" : "c0dexter-HP-EliteBook-8540w"
   }, {
     "name" : "thread",
-    "value" : "28561@c0dexter-HP-EliteBook-8540w.TestNG-tests-2(14)"
+    "value" : "30696@c0dexter-HP-EliteBook-8540w.TestNG-tests-2(14)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -245,7 +245,11 @@
     "name" : "browser",
     "value" : "CHROME"
   } ],
-  "links" : [ ],
+  "links" : [ {
+    "name" : "ID-1",
+    "url" : "https://example-tms-system.org/tms/ID-1",
+    "type" : "tms"
+  } ],
   "hidden" : false,
   "retry" : false,
   "extra" : {
@@ -254,6 +258,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "871f97e039e22cba.json",
+  "source" : "39143252f767dde8.json",
   "parameterValues" : [ "CHROME" ]
 }
