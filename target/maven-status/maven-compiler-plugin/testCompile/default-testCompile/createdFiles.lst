@@ -10,6 +10,7 @@ examples/ExplicitWaitTests.class
 configuration/PropertiesLoader.class
 framework/tests/PositiveLoginTests.class
 framework/page/objects/FooterPage.class
+framework/generic/assertions/AssertWebElement.class
 framework/driver/BrowserFactory.class
 configuration/ConfigurationProperties.class
 examples/FirstAutomatedTest.class
@@ -24,12 +25,14 @@ framework/page/objects/FishListPage.class
 framework/driver/BrowserType.class
 examples/SecondAutomatedTest.class
 examples/FluentWaitTests2.class
+framework/driver/listeners/DriverEventListener.class
 framework/driver/manager/DriverManager.class
 framework/tests/FailedLoginTests.class
 framework/driver/manager/DriverUtils.class
 configuration/TestRunProperties.class
 framework/waits/WaitForElement.class
 configuration/LocalWebDriverProperties.class
+framework/driver/listeners/WebDriverEventListenerRegistrar.class
 examples/DropDownTests.class
 examples/Calculator.class
 framework/page/objects/ShoppingCartPage.class

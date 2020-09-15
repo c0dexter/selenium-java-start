@@ -6,7 +6,9 @@
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/FileUploadTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/Calculator.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/tests/SeleniumGridExampleTest.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/generic/assertions/AssertWebElement.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/AppProperties.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/listeners/DriverEventListener.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/BrowserType.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/BrowserFactory.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/page/objects/ShoppingCartPage.java
@@ -26,6 +28,7 @@
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/ActionsTest.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/SecondAutomatedTest.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/manager/DriverManager.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/listeners/WebDriverEventListenerRegistrar.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/tests/TestBase.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/WebElementTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/FluentWaitTests.java

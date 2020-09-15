@@ -3,37 +3,37 @@
   "children" : [ {
     "name" : "c0dexter-HP-EliteBook-8540w",
     "children" : [ {
-      "name" : "388@c0dexter-HP-EliteBook-8540w.TestNG-tests-2(14)",
-      "children" : [ {
-        "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
-        "uid" : "33647e141717700f",
-        "parentUid" : "5694c055a905e8ee24e33019ed456df1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1600101549843,
-          "stop" : 1600101551422,
-          "duration" : 1579
-        },
-        "flaky" : false,
-        "parameters" : [ "CHROME" ]
-      } ],
-      "uid" : "5694c055a905e8ee24e33019ed456df1"
-    }, {
-      "name" : "388@c0dexter-HP-EliteBook-8540w.TestNG-tests-1(13)",
+      "name" : "12060@c0dexter-HP-EliteBook-8540w.TestNG-tests-1(13)",
       "children" : [ {
         "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
-        "uid" : "5ffa5bb45758bebe",
-        "parentUid" : "1fa992c5095e714d01f8935f54a0f72e",
+        "uid" : "9fb85dd0e1002047",
+        "parentUid" : "1c9d60a5fe86c833fa5486bb6e9c7e2a",
         "status" : "passed",
         "time" : {
-          "start" : 1600101554565,
-          "stop" : 1600101555295,
-          "duration" : 730
+          "start" : 1600202760680,
+          "stop" : 1600202761701,
+          "duration" : 1021
         },
         "flaky" : false,
         "parameters" : [ "FIREFOX" ]
       } ],
-      "uid" : "1fa992c5095e714d01f8935f54a0f72e"
+      "uid" : "1c9d60a5fe86c833fa5486bb6e9c7e2a"
+    }, {
+      "name" : "12060@c0dexter-HP-EliteBook-8540w.TestNG-tests-2(14)",
+      "children" : [ {
+        "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
+        "uid" : "338ab83cbe1e52c6",
+        "parentUid" : "3998fe665cba5beb2f977e4dbf044882",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600202756260,
+          "stop" : 1600202757758,
+          "duration" : 1498
+        },
+        "flaky" : false,
+        "parameters" : [ "CHROME" ]
+      } ],
+      "uid" : "3998fe665cba5beb2f977e4dbf044882"
     } ],
     "uid" : "c9e54022de7af78312902ee1de21a270"
   } ],
