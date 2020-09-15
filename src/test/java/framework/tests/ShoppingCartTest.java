@@ -8,8 +8,6 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.TmsLink;
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertTrue;
-
 public class ShoppingCartTest extends TestBase {
 
     @TmsLink("ID-3")
@@ -27,9 +25,10 @@ public class ShoppingCartTest extends TestBase {
                 .clickSmallAngelfishAddToCartButton()
                 .clickProceedToCheckoutButton();
 
-        String warningMessage = loginPage.getWarningMessage();
+        loginPage
+                .assertThatWarningIsDisplayed(
+                        "You must sign on before attempting to check out. Please sign on and try checking out again."
+                );
 
-        String expectedWarningMessage = "You must sign on before attempting to check out.";
-        assertTrue(warningMessage.contains(expectedWarningMessage));
     }
 }
