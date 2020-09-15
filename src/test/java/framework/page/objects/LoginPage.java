@@ -1,6 +1,7 @@
 package framework.page.objects;
 
 import framework.driver.manager.DriverManager;
+import framework.generic.assertions.AssertWebElement;
 import framework.waits.WaitForElement;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
@@ -57,18 +58,18 @@ public class LoginPage {
     }
 
     @Step("Click on Login Button")
-    public FooterPage clickOnLoginButton() {  // TODO: Skąd wiedzieć że to jest przekierowanie do FooterPage? :|
+    public FooterPage clickOnLoginButton() {
         signOnButton.click();
         logger.info("Clicked on Login Button");
         return new FooterPage();
     }
 
     @Step("Getting warning message from Login Page")
-    public String getWarningMessage() {
+    public LoginPage assertThatWarningIsDisplayed(String warningMessage) {
+        logger.info("Checking if warning message {} is displayed", warningMessage);
         WaitForElement.waitUntilElementIsVisible(messageLabel);
-        String warningMessage = messageLabel.getText();
-        logger.info("Returned warning message was: {}", warningMessage);
-        return warningMessage;
+        AssertWebElement.assertThat(messageLabel).isDisplayed().hasText(warningMessage);
+        return this;
     }
 
     @Step("Click on the fish button")

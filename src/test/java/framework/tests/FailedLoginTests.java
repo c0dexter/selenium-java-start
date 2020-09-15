@@ -6,7 +6,6 @@ import io.qameta.allure.*;
 import org.testng.annotations.Test;
 
 import static framework.navigation.ApplicationURLs.LOGIN_URL;
-import static org.testng.AssertJUnit.assertEquals;
 
 public class FailedLoginTests extends TestBase {
 
@@ -24,6 +23,6 @@ public class FailedLoginTests extends TestBase {
         loginPage.typeIntoPasswordField("NotProperPassword");
         loginPage.clickOnLoginButton();
 
-        assertEquals(loginPage.getWarningMessage(), "Invalid username or password. Signon failed.");
+        loginPage.assertThatWarningIsDisplayed("Invalid username or password. Signon failed.");
     }
 }
