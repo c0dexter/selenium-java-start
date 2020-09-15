@@ -33,12 +33,12 @@ public class AssertWebElement extends AbstractAssert<AssertWebElement, WebElemen
 
     // Metoda do sprawdzenia czy element posiada zadany tekst
     public AssertWebElement hasText(String expectedTextValue) {
-        logger.info("Checking if WebElement has text: " + expectedTextValue);
+        logger.info("Checking if WebElement has text: \"" + expectedTextValue + "\"");
         isNotNull();
 
         String actualElementText = actual.getText();
         if (!actualElementText.equals(expectedTextValue)) {
-            failWithMessage("Element text was <%s> expecting to be <%s>!", actualElementText, expectedTextValue);
+            failWithMessage("Element text was: \"<%s>\", but expecting to be: \"<%s>\"!", actualElementText, expectedTextValue);
         }
 
         logger.info("WebElement had expected text!");
