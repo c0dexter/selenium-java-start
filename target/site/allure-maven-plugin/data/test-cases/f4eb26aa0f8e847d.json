@@ -1,5 +1,5 @@
 {
-  "uid" : "9fb85dd0e1002047",
+  "uid" : "f4eb26aa0f8e847d",
   "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
   "fullName" : "framework.tests.FailedLoginTests.asUserTryToLogInWithIncorrectLoginAndPassword",
   "historyId" : "a3f9da3ae540f0a5b2dab734b4e713e3",
@@ -287,14 +287,12 @@
     "url" : "https://example-tms-system.org/tms/ID-1",
     "type" : "tms"
   } ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9fb85dd0e1002047.json",
+  "source" : "f4eb26aa0f8e847d.json",
   "parameterValues" : [ "FIREFOX" ]
 }

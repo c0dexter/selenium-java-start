@@ -4,10 +4,10 @@
     "uid" : "20dcff51a2ecd4af73f197737658a290",
     "name" : "All Pet Store Tests",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 2
     }

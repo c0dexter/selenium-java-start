@@ -1,3 +1,3 @@
 "Status","Name","Duration in ms","Description"
-"passed","framework.tests.FailedLoginTests.asUserTryToLogInWithIncorrectLoginAndPassword","1021","The goal of this test is to log in using not proper username and password and check if warning message Invalid username or password is displayed"
-"passed","framework.tests.PositiveLoginTests.asUserTryToLogInWithCorrectLoginAndPassword","1498","The goal of this test is to log in using proper username and password and check if Dog Banner is displayed after"
+"passed","framework.tests.PositiveLoginTests.asUserTryToLogInWithCorrectLoginAndPassword","1313","The goal of this test is to log in using proper username and password and check if Dog Banner is displayed after"
+"failed","framework.tests.FailedLoginTests.asUserTryToLogInWithIncorrectLoginAndPassword","1225","The goal of this test is to log in using not proper username and password and check if warning message Invalid username or password is displayed"
