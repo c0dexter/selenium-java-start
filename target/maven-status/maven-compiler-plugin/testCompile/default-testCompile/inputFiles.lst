@@ -1,12 +1,15 @@
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/tests/PositiveLoginTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/waits/WaitForElement.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/ConfigurationProperties.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/utils/testng/listeners/AnnotationTransformer.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/navigation/ApplicationURLs.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/page/objects/TopMenuPage.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/utils/testng/listeners/TestListener.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/FileUploadTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/Calculator.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/tests/SeleniumGridExampleTest.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/generic/assertions/AssertWebElement.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/utils/ScreenShotMaker.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/configuration/AppProperties.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/listeners/DriverEventListener.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/BrowserType.java
@@ -27,6 +30,7 @@
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/HoverTests.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/ActionsTest.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/examples/SecondAutomatedTest.java
+/home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/utils/testng/listeners/RetryAnalyzer.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/manager/DriverManager.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/driver/listeners/WebDriverEventListenerRegistrar.java
 /home/c0dexter/IdeaProjects/Selenium/FirstProject/src/test/java/framework/tests/TestBase.java

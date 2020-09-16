@@ -6,13 +6,13 @@
       "name" : "Element text was: \"<Invalid username or password. Signon failed.>\", but expecting to be: \"<Invalid username or password. Signon failed. 222222>\"!",
       "children" : [ {
         "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
-        "uid" : "2927fd1c073699a5",
+        "uid" : "870b26c3b5eda3a3",
         "parentUid" : "ccb7c586c5d583e40e573ca1a5053b6e",
         "status" : "failed",
         "time" : {
-          "start" : 1600207526916,
-          "stop" : 1600207528141,
-          "duration" : 1225
+          "start" : 1600291443879,
+          "stop" : 1600291445069,
+          "duration" : 1190
         },
         "flaky" : true,
         "parameters" : [ "FIREFOX" ]
