@@ -9,31 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "338ab83cbe1e52c6",
+      "uid" : "3a11b1e5081cf212",
       "status" : "passed",
       "time" : {
-        "start" : 1600202756260,
-        "stop" : 1600202757758,
-        "duration" : 1498
+        "start" : 1600207522001,
+        "stop" : 1600207523314,
+        "duration" : 1313
       }
     } ]
   },
   "a3f9da3ae540f0a5b2dab734b4e713e3" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9fb85dd0e1002047",
-      "status" : "passed",
+      "uid" : "2927fd1c073699a5",
+      "status" : "failed",
+      "statusDetails" : "Element text was: \"<Invalid username or password. Signon failed.>\", but expecting to be: \"<Invalid username or password. Signon failed. 222222>\"!",
       "time" : {
-        "start" : 1600202760680,
-        "stop" : 1600202761701,
-        "duration" : 1021
+        "start" : 1600207526916,
+        "stop" : 1600207528141,
+        "duration" : 1225
       }
     } ]
   }

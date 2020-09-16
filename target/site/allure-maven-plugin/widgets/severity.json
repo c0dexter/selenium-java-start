@@ -1,21 +1,21 @@
 [ {
-  "uid" : "338ab83cbe1e52c6",
+  "uid" : "2927fd1c073699a5",
+  "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
+  "time" : {
+    "start" : 1600207526916,
+    "stop" : 1600207528141,
+    "duration" : 1225
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a11b1e5081cf212",
   "name" : "asUserTryToLogInWithCorrectLoginAndPassword",
   "time" : {
-    "start" : 1600202756260,
-    "stop" : 1600202757758,
-    "duration" : 1498
+    "start" : 1600207522001,
+    "stop" : 1600207523314,
+    "duration" : 1313
   },
   "status" : "passed",
   "severity" : "blocker"
-}, {
-  "uid" : "9fb85dd0e1002047",
-  "name" : "asUserTryToLogInWithIncorrectLoginAndPassword",
-  "time" : {
-    "start" : 1600202760680,
-    "stop" : 1600202761701,
-    "duration" : 1021
-  },
-  "status" : "passed",
-  "severity" : "normal"
 } ]
