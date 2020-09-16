@@ -12,6 +12,7 @@ framework/tests/PositiveLoginTests.class
 framework/page/objects/FooterPage.class
 framework/generic/assertions/AssertWebElement.class
 framework/driver/BrowserFactory.class
+framework/utils/testng/listeners/TestListener.class
 configuration/ConfigurationProperties.class
 examples/FirstAutomatedTest.class
 framework/page/objects/LandingPage.class
@@ -26,7 +27,9 @@ framework/driver/BrowserType.class
 examples/SecondAutomatedTest.class
 examples/FluentWaitTests2.class
 framework/driver/listeners/DriverEventListener.class
+framework/utils/testng/listeners/AnnotationTransformer.class
 framework/driver/manager/DriverManager.class
+framework/utils/ScreenShotMaker.class
 framework/tests/FailedLoginTests.class
 framework/driver/manager/DriverUtils.class
 configuration/TestRunProperties.class
@@ -39,3 +42,4 @@ framework/page/objects/ShoppingCartPage.class
 examples/WaitUntil.class
 framework/page/objects/AngelFishListPage.class
 framework/driver/BrowserFactory$1.class
+framework/utils/testng/listeners/RetryAnalyzer.class
