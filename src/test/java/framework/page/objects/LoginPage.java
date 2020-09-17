@@ -6,8 +6,8 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends BasePage{
-    
+public class LoginPage extends BasePage {
+
     // Page Factory
     @FindBy(name = "username")
     WebElement usernameField;
@@ -87,5 +87,4 @@ public class LoginPage extends BasePage{
     public void clickOnBirds() {
         birdsButton.click();
     }
-
 }

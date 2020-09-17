@@ -29,6 +29,5 @@ public class ShoppingCartTest extends TestBase {
                 .assertThatWarningIsDisplayed(
                         "You must sign on before attempting to check out. Please sign on and try checking out again."
                 );
-
     }
 }

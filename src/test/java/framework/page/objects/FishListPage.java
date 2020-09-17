@@ -4,7 +4,7 @@ import framework.waits.WaitForElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class FishListPage extends BasePage{
+public class FishListPage extends BasePage {
 
     //Page Object
     @FindBy(css = "a[href$='FI-SW-01']")

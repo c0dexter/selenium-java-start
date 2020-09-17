@@ -5,7 +5,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class TopMenuPage extends BasePage{
+public class TopMenuPage extends BasePage {
 
     // PageFactory
     @FindBy(css = "#MenuContent a[href*='signonForm']")
@@ -28,6 +28,7 @@ public class TopMenuPage extends BasePage{
         log().info("Clicked on Sign on Link");
         return new LoginPage();
     }
+
     @Step("Click on Fish link")
     public FishListPage clickOnFish() {
         WaitForElement.waitUntilElementIsClickable(fishButton);

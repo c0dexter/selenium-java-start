@@ -9,11 +9,11 @@ public abstract class BasePage {
 
     private Logger logger = LogManager.getLogger(this.getClass().getName());
 
-    public BasePage(){
+    public BasePage() {
         PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
 
-    protected Logger log(){
+    protected Logger log() {
         return logger;
     }
 }
