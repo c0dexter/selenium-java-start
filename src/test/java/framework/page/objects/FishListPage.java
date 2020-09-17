@@ -1,10 +1,8 @@
 package framework.page.objects;
 
-import framework.driver.manager.DriverManager;
 import framework.waits.WaitForElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class FishListPage extends BasePage{
 
@@ -17,10 +15,6 @@ public class FishListPage extends BasePage{
     WebElement koiProductId;
     @FindBy(css = "a[href$='FI-FW-02']")
     WebElement goldfishProductId;
-
-    public FishListPage() {
-        PageFactory.initElements(DriverManager.getWebDriver(), this); // Initializing elements in the constructor
-    }
 
     public AngelFishListPage clickOnAngelFishProductId() {
         WaitForElement.waitUntilElementIsClickable(angelfishProductId);
